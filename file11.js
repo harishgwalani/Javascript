@@ -1,0 +1,22 @@
+let fruits=["apple","banana","mango","oranges","watermelon","grapes"];
+console.log(fruits);
+console.log(fruits[1]);
+let n;
+n=25;
+let nos=[2,6,4,0];
+console.log(nos);
+let mixed=[1,12,"harush",65];
+console.log(mixed);
+console.log(fruits[1]);
+console.log(typeof fruits);
+
+fruits.push("papaya");
+console.log(fruits);
+fruits.push("cherry");
+console.log(fruits);    
+console.log(fruits.pop());
+console.log(fruits);
+fruits.unshift("car");
+console.log(fruits);
+fruits.shift();
+console.log(fruits);

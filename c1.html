@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Calculator</title>
+    <style>
+      .container {
+        text-align: center;
+        margin-top: 70px;
+      }
+      table {
+        margin: auto;
+      }
+      input {
+        font-size: 37px;
+        border: 5px solid black;
+        border-radius: 21px;
+      }
+      button {
+        font-size: 35px;
+        background-color: pink;
+        width: 100px;
+        height: 70px;
+        border-radius: 25px;
+      }
+      .calculator {
+        border: 5px solid black;
+        display: inline-block;
+        padding: 13px;
+        border-radius: 25px;
+        background-color: yellow;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Calculator</h1>
+      <div class="calculator">
+        <input type="text" name="screen" id="screen" onchange="changevalue()" />
+        <table class="table" name="table" onclick="insert('num')">
+          <tr>
+            <td><button onClick="calculations('percentage')">%</button></td>
+            <td><button onClick="clearss()">C</button></td>
+            <td><button onClick="Delete()">Del</button></td>
+            <td><button onClick="calculations('div')">/</button></td>
+          </tr>
+          <tr>
+            <td><button id="btn7" onClick="msgprint(7)">7</button></td>
+            <td><button id="btn8" onClick="msgprint(8)">8</button></td>
+            <td><button id="btn9" onClick="msgprint(9)">9</button></td>
+            <td><button onClick="calculations('add')">+</button></td>
+          </tr>
+          <tr>
+            <td><button id="btn4" onClick="msgprint(4)">4</button></td>
+            <td><button id="btn5" onClick="msgprint(5)">5</button></td>
+            <td><button id="btn6" onClick="msgprint(6)">6</button></td>
+            <td><button onClick="calculations('sub')">-</button></td>
+          </tr>
+          <tr>
+            <td><button id="btn1" onClick="msgprint(1)">1</button></td>
+            <td><button id="btn2" onClick="msgprint(2)">2</button></td>
+            <td><button id="btn3" onClick="msgprint(3)">3</button></td>
+            <td><button onClick="calculations('mul')">X</button></td>
+          </tr>
+          <tr>
+            <td><button id="btn00" onClick="msgprint(00)">00</button></td>
+            <td><button id="btn0" onClick="msgprint(0)">0</button></td>
+            <td><button onclick="point">.</button></td>
+            <td><button onClick="result()">=</button></td>
+          </tr>
+        </table>
+      </div>
+    </div>
+  </body>
+  <script>
+    var str="";
+    function msgprint(numb){
+		str+=numb;
+		document.getElementById("screen").value=str;
+		}
+  </script>
+</html>

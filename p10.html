@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<p id="demo"></p>
+</body>
+<script>
+        const cars=['bmw','volvo','creata'];
+        document.getElementById("demo").innerHTML=cars;
+        document.write(cars[1]);
+        document.write("<br>");
+        document.write(cars.length);
+        document.write("<br>");
+        document.write(cars.length-1);
+        cars.forEach((item,index,array)=>console.log(item,index));
+        document.write("<br><br>")
+        document.write(cars.toString());
+        console.log(cars.pop());
+        cars.push('alto');
+        console.log(cars);
+        cars.shift();
+        console.log(cars);
+        cars.unshift("matuti");
+        console.log(cars);  
+        const bike=['karishma','bullet','honda'];
+        const vehicle=cars.concat(bike);
+        console.log(vehicle);   
+        console.log(vehicle.sort());
+        document.write(vehicle.sort());
+        document.write("<br>");
+        document.write(vehicle.reverse());
+
+</script>
+</html>

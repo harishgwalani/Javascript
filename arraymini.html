@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  </head>
+  <style>.addcontainer{
+
+   margin-top:100px;  
+  }</style>
+  <body>
+    <div class="container">
+        <!----add container-->
+
+      <div class="row addcontainer">
+        <div class="col-md-10">
+          <div class="form-group">
+            <input
+              type="text"
+              placeholder="Search"
+              class="form-control"
+              id="usr"
+            />
+          </div>
+        </div>
+        <div class="col-md-2">
+          <button class="btn btn-info" onclick="add_data()">Add</button>
+        </div>
+      </div>
+
+      <!----end container-->
+      <!--list container-->
+<div class="row">
+    <div class="col-md-12">
+        <ol id="resultdata">
+        <li>one</li>
+
+    </ol></div>
+</div>
+
+      <!----end list container--->
+    </div>
+
+</div>
+  </body>
+  <script>
+    function add_data()
+    {
+        var datainput=document.getElementById("usr").value;
+        
+        var listdata=document.getElementById("resultdata");
+     
+       var newLI = document.createElement("li");
+      
+      var  newText = document.createTextNode(datainput);
+     newLI.appendChild(newText);
+      var newbutton = document.createElement("button");
+      newbutton.setAttribute("id","butt-1");
+      console.log(newbutton);
+ 
+      var  newText1 = document.createTextNode("-");
+      newbutton.appendChild(newText1)
+      newLI.appendChild(newbutton);
+     // var element = document.getElementById("butt-1").value;
+       //  console.log(element);
+// element.onclick = function(event) {
+//   console.log(event);
+// }
+        listdata.appendChild(newLI);
+ 
+        
+
+    }
+    
+  </script>
+</html>

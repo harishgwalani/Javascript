@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1
+        {
+            background-color: aqua;
+        }
+        #res
+        {
+            background-color: red;
+            color: black;
+        }
+    </style>
+</head>
+<body>
+    <h1>Tempratue</h1>
+    <p id="res"></p>
+</body>
+<script>
+//     let temp;
+// temp=+prompt("Enter temp");
+var temp;
+temp=parseInt(prompt("Enter temp"));
+
+if (temp < 0) {//2<0
+    // console.log("Extremly cold");//false
+    document.getElementById("res").innerHTML="Extremly cold";
+}
+else if (temp < 16) {//2<16
+    // console.log("It is cold");//true
+    document.getElementById("res").innerHTML="It is cold";
+}
+else if (temp < 25) {
+    // console.log("ohk");
+    document.getElementById("res").innerHTML="ohk";
+}
+else if (temp < 35) {
+    // console.log("Swim");
+    document.getElementById("res").innerHTML="Swim";
+}
+else {
+    // console.log("AC");
+    document.getElementById("res").innerHTML="AC";
+}
+</script>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+  <h1 id="demo"></h1>  
+</body>
+<script>
+    const marks=[55,65,45,85,95,65,74,64,88,97];
+    const name=["harish","sagar","suraj","nikhil"];
+    //document.getElementById("demo").innerHTML=marks.toString();
+    var i;
+    for(i=0;i<marks.length;i++)
+    {
+        console.log(i);
+        document.write("  "+i);
+        //document.getElementById("demo").innerHTML=i.toString();
+    }
+    for(i=0;i<name.length;i++)
+    {
+        console.log(name[i]);
+        document.write("  "+name[i]);
+        //document.getElementById("demo").innerHTML=i.toString();
+    }
+name.push("yash");
+document.write("<br>");
+document.write(name);
+name.pop();
+document.write("<br>");
+document.write(name);
+name.unshift("gaurav");3
+document.write("<br>");
+document.write(name);
+name.shift();
+document.write("<br>");
+document.write(name);
+</script>
+</html>

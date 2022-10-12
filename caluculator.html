@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculator</title>
+    <script>
+      function add() {
+        var a = parseInt(document.getElementById("inp1").value);
+        console.log(typeof a);
+        var b = parseInt(document.getElementById("inp2").value);
+        var r = a + b;
+        document.getElementById("result").innerHTML = r;
+      }
+      function sub() {
+        var a = parseInt(document.getElementById("inp1").value);
+        console.log(typeof a);
+        var b = parseInt(document.getElementById("inp2").value);
+        var r = a - b;
+        document.getElementById("result").innerHTML = r;
+      }
+      function mul() {
+        var a = parseInt(document.getElementById("inp1").value);
+        console.log(typeof a);
+        var b = parseInt(document.getElementById("inp2").value);
+        var r = a * b;
+        document.getElementById("result").innerHTML = r;
+      }
+      function div() {
+        var a = parseInt(document.getElementById("inp1").value);
+        console.log(typeof a);
+        var b = parseInt(document.getElementById("inp2").value);
+        var r = a / b;
+        document.getElementById("result").innerHTML = r;
+      }
+    </script>
+    <style>
+      body {
+        height: 100%;
+      }
+      .center {
+        margin: 50px;
+        padding: 50px;
+      }
+      .parent {
+        background-color: gray;
+        display: flex;
+        justify-content: center;
+      }
+      .cen
+      {
+        text-align: center;
+        color: white;
+      }
+     .child
+     {
+      background-color: aqua;
+     }
+    </style>
+  </head>
+  <body>
+    <div class="parent">
+      <div class="child">
+        <h1 class="cen">Calculator</h1>
+        <table class="center">
+          <tr>
+            <td>
+              <label for="fnum">First num:</label>
+            </td>
+            <td>
+              <input type="number" id="inp1" name="fnum" />
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <label for="snum">Second num:</label>
+            </td>
+            <td>
+              <input type="number" id="inp2" name="snum" />
+            </td>
+          </tr>
+          <tr>
+            <td><button onclick="add()">+</button></td>
+            <td><button onclick="sub()">-</button></td>
+          </tr>
+          <tr>
+            <td>
+              <button onclick="mul()">*</button>
+            </td>
+            <td>
+              <button onclick="div()">/</button>
+            </td>
+          </tr>
+
+          <tr>
+            <td>
+              <label for="result">result:</label>
+            </td>
+            <td>
+              <p id="result"></p>
+            </td>
+          </tr>
+        </table>
+      </div>
+    </div>
+
+    <script src="f3.js"></script>
+  </body>
+</html>

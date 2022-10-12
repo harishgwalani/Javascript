@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script>
+  
+  function validateForm()
+{
+  var str=document.getElementById('mobile').value;
+console.log(str.match(/^\d{10}$/));
+// String with Indian mobile number
+if(str.match(/\d{10}/)){
+  alert('validated')
+  return true;
+}
+else{
+  alert('Please validate mobile number')
+  return false
+}
+
+
+}
+</script>
+</head>
+<body>
+ 
+<form name="myForm" action="demo_form.php"
+onsubmit="return " method="post">
+
+mobilenumber: <input type="number" id="mobile" name="mobile">
+<button type="button" onclick="validateForm()" value="Submit">Submit</button>
+</form>
+ 
+</body>
+</html>

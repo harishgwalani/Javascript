@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>javascript
+    </title>
+    <style>
+        .cont{
+background-color: gray;
+        }
+    </style>
+</head>
+<body>    
+  <div class="cont">
+    <label>First Number:</label><br>
+    <input type="number" id="fnumb"><br>
+    <label>Second Number:</label><br>
+    <input type="number" id="snumb"><br>
+    <button onclick="add()">+</button><br>
+  
+    <p id="result"></p><br>
+  </div>
+</body>
+<script>
+    function add()
+    {
+        var a=parseInt(document.getElementById("fnumb").value);
+        console.log(a);
+        console.log(typeof a);
+        var b=parseInt(document.getElementById("snumb").value);
+        console.log(b)
+        console.log(typeof b)
+        var c=a+b;
+        document.getElementById("result").innerHTML=c;
+        console.log(c);
+    }
+
+
+   
+
+  
+    // var c=a+b;
+    // document.write("<br>Addition of two number is "+c);
+</script>
+</html>
